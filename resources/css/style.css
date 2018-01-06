@@ -1,0 +1,112 @@
+/* Universal Styles */ 
+
+html {
+  font-size: 16px; 
+}
+
+body {
+  margin: 0; 
+  font-family: "Helvetica", sans-serif;
+  color: black; 
+}
+
+.container {
+	margin: 2rem 1.5rem; 
+}
+
+.h2 {
+}
+
+.btn {
+}
+
+.image-container {
+}
+
+.title {
+}
+
+.card {
+}
+
+.cards {
+}
+
+
+a {
+  color: black;
+}
+
+
+
+
+/* Header */ 
+header {
+
+}
+
+.logo {
+}
+
+nav .desktop{
+}
+
+nav .mobile {
+}
+
+
+/* Banner */ 
+
+.banner {
+}
+
+.image-container {
+}
+
+.title {
+}
+
+/* School Info */ 
+
+.school-info {
+}
+
+.student {
+}
+
+.info-cards {
+}
+
+.info-detail {
+}
+
+
+/* Curriculum */ 
+
+.curriculum {
+}
+
+.course-cards{
+}
+
+.curriculum-info{
+}
+
+.description {
+}
+
+
+
+/* Thesis */ 
+.thesis {
+}
+
+
+.video {
+}
+
+
+/* Footer */ 
+footer {
+
+}
