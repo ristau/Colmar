@@ -1,17 +1,22 @@
-/* Universal Styles */ 
+/* Universal Styles */
 
 html {
-  font-size: 16px; 
+  font-size: 16px;
 }
 
 body {
-  margin: 0; 
+  margin: 0;
   font-family: "Helvetica", sans-serif;
-  color: black; 
+  color: black;
 }
 
 .container {
-	margin: 2rem 1.5rem; 
+   margin: 0 1.5rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
 }
 
 .h2 {
@@ -20,7 +25,7 @@ body {
 .btn {
 }
 
-.image-container {
+.img-container {
 }
 
 .title {
@@ -40,24 +45,64 @@ a {
 
 
 
-/* Header */ 
-header {
+/* Header */
 
+header {
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
 }
 
+
 .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 2rem;
+}
+
+.logo h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.logo h3 span {
+  font-weight: 800;
 }
 
 nav .desktop{
 }
 
 nav .mobile {
+  display: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 .5rem;
+}
+
+/*   Header Media Query  */
+@media only screen and (max-width: 560px) {
+  nav .mobile {
+    display: block;
+  }
+
+  nav .desktop {
+    display: none;
+  }
 }
 
 
-/* Banner */ 
+/* Banner */
 
 .banner {
+  width: 100%;
+  background-color: lightgray;
+}
+
+.banner .container {
+  padding: 0.5rem 0;
 }
 
 .image-container {
@@ -66,7 +111,7 @@ nav .mobile {
 .title {
 }
 
-/* School Info */ 
+/* School Info */
 
 .school-info {
 }
@@ -81,7 +126,7 @@ nav .mobile {
 }
 
 
-/* Curriculum */ 
+/* Curriculum */
 
 .curriculum {
 }
@@ -97,7 +142,7 @@ nav .mobile {
 
 
 
-/* Thesis */ 
+/* Thesis */
 .thesis {
 }
 
@@ -106,7 +151,7 @@ nav .mobile {
 }
 
 
-/* Footer */ 
+/* Footer */
 footer {
 
 }
