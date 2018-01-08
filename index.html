@@ -35,14 +35,22 @@
      <!-- Banner -->
 
     <div class="banner">
-      <div class="flex container">
-    	   <div class="img-container">
-           <img src="./resources/images/banner.jpg" alt="photo of students at table" >
+      <div class="banner-items flex container">
+        <div class="img-container">
+          <picture>
+              <source media="(max-width: 560px)" srcset="./resources/images/banner_560.jpg">
+              <source media="(max-width: 768px)" srcset="./resources/images/banner_461.jpg">
+              <source media="(max-width: 960px)" srcset="./resources/images/banner_576.jpg">
+              <source media="(max-width: 1024px)" srcset="./resources/images/banner_614.jpg">
+           <img src="./resources/images/banner_820.jpg" alt="picture of students at table">
+         </picture>
          </div>
     	   <div class="title">
-    		     <h1>Learn Something New Every Day</h1>
-    		     <h2>Take classes at Colmar. Make new friends and learn new skills.</h2>
-    		     <p class="btn">Start Here</p>
+           <div class="title-items">
+    		       <h1>Learn something new everyday</h1>
+    		       <h2>Take classes at Colmar. Make new friends and learn new skills.</h2>
+    		       <p class="btn"><a href="#">Start Here</a></p>
+          </div>
     	   </div>
        </div>
     </div>
@@ -51,7 +59,7 @@
 
     <div class="school-info">
         <div class="student">
-        	<div class="image-container">
+        	<div class="img-container">
         		<img src="" alt="" >
         	</div>
     		<div class="title">
