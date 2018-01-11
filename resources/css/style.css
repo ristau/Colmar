@@ -424,6 +424,14 @@ nav .mobile {
 }
 
 /*   Curriculum Media Query  */
+
+@media only screen and (max-width: 715px) {
+  .curriculum .card-text p {
+    font-size: 0.75rem;
+  }
+}
+
+
 @media only screen and (max-width: 620px) {
 
   .curriculum.container {
@@ -438,6 +446,7 @@ nav .mobile {
   }
 
   .curriculum h2 {
+    margin-top: 2rem; 
     margin-bottom: 1rem;
   }
 
@@ -541,7 +550,7 @@ footer a {
 @media only screen and (max-width: 620px) {
 
   footer.container {
-    padding: 1rem 1rem; 
+    padding: 1rem 1rem;
   }
 
   footer .left-col {
