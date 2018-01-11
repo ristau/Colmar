@@ -160,7 +160,6 @@ video {
 }
 
 
-
 /* Horizontal Card - Image on Left with Text on Right */
 
 .card-horizontal {
@@ -213,7 +212,6 @@ header.container {
   padding-bottom: 0;
 }
 
-
 .logo {
   display: flex;
   align-items: center;
@@ -233,25 +231,25 @@ header.container {
 }
 
 nav {
+  width: 60%;
   padding: 0 1.5rem;
 }
 
-nav .desktop{
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 nav .mobile {
   display: none;
 }
 
-nav ul li {
-    display: inline-block;
-    padding: 0 0.5rem;
-}
 
 /*   Header Media Query  */
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 620px) {
   nav .mobile {
-    display: block;
+    display: flex;
   }
 
   nav .desktop {
@@ -289,7 +287,7 @@ nav ul li {
 
 
 /*   Banner Media Query  */
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 620px) {
     .banner.container.flex {
       margin: 0;
       padding: 0;
@@ -304,10 +302,40 @@ nav ul li {
       margin: 0;
     }
 
+    .banner .left-col {
+      width: 100%;
+    }
+
+    .banner .right-col {
+      width: 100%;
+      margin: 2rem 1rem;
+    }
+
+    .banner h1 {
+      padding-right: 1rem;
+      padding-bottom: 2rem;
+      width: 90%;
+    }
+
+    .banner h4 {
+      padding-right: 1rem;
+      width: 90%;
+    }
+
+    .banner .btn {
+      width: 90%;
+      padding-right: 1rem;
+      background-color: #909090;
+      color: white;
+    }
 }
 
 
 /* School Info */
+
+.school-info .mobile {
+  display: none;
+}
 
 .school-info h2 {
   margin-top: 2rem;
@@ -322,6 +350,59 @@ nav ul li {
 .school-info .right-col .card-horizontal:last-child{
   background-color: #DCDCDC;
 }
+
+/*   School Info Media Query  */
+@media only screen and (max-width: 620px) {
+
+  .school-info.container {
+    padding: 0;
+    border-bottom: 0.01rem solid lightgray;
+  }
+
+  .school-info .mobile {
+    display: block;
+  }
+
+  .school-info .desktop {
+    display: none;
+  }
+  .school-info .left-col {
+    display: none;
+  }
+
+  .school-info .right-col {
+    width: auto;
+    padding: 1rem;
+  }
+
+  .school-info .card-horizontal {
+    flex-direction: column;
+    background-color: #F8F8F8;
+    max-width: 100%;
+    border: none;
+    overflow: hidden;
+  }
+
+  .school-info .img-container {
+     width: 100%;
+     margin: 0;
+  }
+
+  .school-info .card-horizontal-text {
+    width: 100%;
+    margin: 1rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .school-info .right-col .card-horizontal:last-child{
+    background-color: #F8F8F8;
+  }
+
+  .school-info p {
+    margin-bottom: 1rem;
+  }
+}
+
 
 
 /* Curriculum */
@@ -342,6 +423,52 @@ nav ul li {
   justify-content: center;
 }
 
+/*   Curriculum Media Query  */
+@media only screen and (max-width: 620px) {
+
+  .curriculum.container {
+    background-color: #F8F8F8;
+    padding: 0 0 2rem 0;
+    border-bottom: 0.01rem solid lightgray;
+  }
+
+  .curriculum .flex {
+    flex-direction: column;
+    margin: 0 1rem;
+  }
+
+  .curriculum h2 {
+    margin-bottom: 1rem;
+  }
+
+  .curriculum .card {
+    width: 100%;
+    background-color: #DCDCDC;
+    margin: 0.5rem 1rem;
+
+  }
+
+  .curriculum .card-img-container {
+    display: none;
+  }
+
+  .curriculum .card-text {
+    height: auto;
+  }
+
+  .curriculum .card-text h3 {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .curriculum .card-text p {
+    display: none;
+  }
+
+  .curriculum .card-text h5{
+    display: none;
+  }
+}
 
 /* Thesis */
 
@@ -363,29 +490,68 @@ nav ul li {
   background-color: #DCDCDC;
 }
 
+/*   Thesis Media Query  */
+@media only screen and (max-width: 620px) {
+  .thesis.container {
+    padding: 0 0 1.5rem 0;
+  }
 
+  .thesis h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
 
+  .thesis .left-col {
+    width: 100%;
+  }
 
-/* Footer */
-footer {
-  border-top: 1px solid #DCDCDC;
+  .thesis .left-col .text {
+    display: none;
+  }
+
+  .thesis .right-col {
+    display: none;
+  }
 }
 
-footer p{
+/* Footer */
+
+footer {
   font-size: 0.8rem;
+  font-weight: 300;
+  align-items: center;
+  justify-content: space-between;
 }
 
 footer .right-col {
   text-align: right;
-  margin-right: 3rem;
-}
-
-footer a {
-  font-size: 0.8rem;
-  color: #888888;
 }
 
 footer ul li {
-    display: inline-block;
-    padding: 0 .5rem;
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+
+footer a {
+  color: #888888;
+}
+
+/*   Footer Media Query  */
+@media only screen and (max-width: 620px) {
+
+  footer.container {
+    padding: 1rem 1rem; 
+  }
+
+  footer .left-col {
+    width: 100%;
+  }
+
+  footer .right-col {
+    display: none;
+  }
+
+  }
+
 }
