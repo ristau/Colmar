@@ -222,7 +222,7 @@ header.container {
   text-transform: uppercase;
   font-weight: 400;
   color: #B0B0B0;
-  font-style: bold;
+  font-weight: bold;
 }
 
 .logo h3 span {
@@ -446,7 +446,7 @@ nav .mobile {
   }
 
   .curriculum h2 {
-    margin-top: 2rem; 
+    margin-top: 2rem;
     margin-bottom: 1rem;
   }
 
@@ -528,12 +528,31 @@ nav .mobile {
 footer {
   font-size: 0.8rem;
   font-weight: 300;
-  align-items: center;
-  justify-content: space-between;
 }
 
-footer .right-col {
-  text-align: right;
+footer.flex{
+  justify-content: space-around;
+  align-items: center;
+}
+
+#copyright {
+  display: flex;
+  justify-content: center;
+}
+
+#social {
+    display: flex;
+    justify-content: center;
+
+}
+
+#terms {
+    display: flex;
+    justify-content: center;
+}
+
+#social i{
+  padding: 0.5rem;
 }
 
 footer ul li {
@@ -553,14 +572,8 @@ footer a {
     padding: 1rem 1rem;
   }
 
-  footer .left-col {
-    width: 100%;
-  }
-
-  footer .right-col {
+  #terms {
     display: none;
-  }
-
   }
 
 }

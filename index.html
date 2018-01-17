@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Colmar Academy</title>
@@ -7,6 +7,7 @@
         <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Hind:500,600" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
@@ -36,7 +37,7 @@
 
      <!-- Banner -->
 
-    <div class="banner container flex">
+    <div class="banner container flex" role="banner">
         <div class="left-col img-container-lg">
           <picture>
               <source media="(max-width: 560px)" srcset="./resources/images/banner_560.jpg">
@@ -55,7 +56,7 @@
 
     <!-- School Info -->
 
-    <div class="school-info container flex">
+    <section class="school-info container flex">
         <div class="left-col flex">
         	  <div class="img-container-lg">
         		  <img src="./resources/images/information-main.jpg" alt="photo of student reading" >
@@ -64,7 +65,7 @@
     			       <h2>It doesn't hurt to keep practicing</h2>
     			       <p>"Lorem ipsum dolor sit amet, at detraxit facilisi mel, melius torquatos ut mea.
                 Sale molestiae mnesarchum et eos, qui adipisci vituperata ut, sea eu voluptatum theophrastus."</p>
-    			       <h6>Emanuel, Sr. Strategist at Hiring.com</h5>
+    			       <h6>Emanuel, Sr. Strategist at Hiring.com</h6>
     		    </div>
 	       </div>
 	    <div class="right-col">
@@ -102,11 +103,11 @@
 	    		</div>
 	    	</div>
 	    </div>
-	</div>
+	</section>
 
      <!-- Curriculum -->
 
-    <div class="curriculum container">
+    <section class="curriculum container">
     	<h2>Start learning</h2>
     	<div class="flex">
     		<div class="card">
@@ -170,10 +171,10 @@
     			</div>
     		</div>
     	</div>
-    </div>
+    </section>
 
       <!-- Thesis -->
-      <div class="thesis container">
+      <section class="thesis container">
  		   <h2>Thesis exhibits</h2>
     		<div class="flex">
 				<div class="left-col img-container-lg flex">
@@ -208,14 +209,18 @@
             </div>
         </div>
     </div>
-  </div>
+  </section>
     <!-- Footer -->
 
     <footer class="container flex">
-   		 <div class="left-col">
+   		 <div id="copyright">
    		 	  <p>&copy; 2016 Colmar Academy. All rights reserved</p>
    		 </div>
-       <div class="right-col">
+      <div id="social">
+          <i class="fa fa-lg fa-facebook"></i>
+           <i class="fa fa-lg fa-twitter"></i>
+       </div>
+       <div id="terms">
          <ul>
            <li><a href="#">Terms</a></li>
            <li><a href="#">Privacy</a></li>
